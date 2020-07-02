@@ -13,12 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* Route::get('/', function(){
-    return view('home.main');
-});
- */
-
 /* Route::get('/', 'AccueilController@index'); */
+
+
+
+Route::get('/post', 'PostController@index');
 
 
 Route::prefix('/')->group(function(){
@@ -26,5 +25,3 @@ Route::prefix('/')->group(function(){
     Route::get('/{any}', 'AdminController@index')->where('any','.*');
 });
 
-//Route::get('/listes', 'ProduitController@index');
-//Route::get('/users', 'UsersController@index');

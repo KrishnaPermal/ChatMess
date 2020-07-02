@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from "./views/Home.vue";
-import Tchat from '../dashboard/views/components/Tchat.vue';
+import Tchat from './views/components/Tchat.vue';
 import Login from "./login/Login.vue";
 import { Role } from './_helpers/role';
-import { authenticationService } from '../dashboard/_services/authentication.service'
+import { authenticationService } from './_services/authentication.service'
 
 Vue.use(VueRouter);
 
